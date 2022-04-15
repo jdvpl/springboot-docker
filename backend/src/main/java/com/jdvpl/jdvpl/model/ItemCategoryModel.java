@@ -1,4 +1,4 @@
-package model;
+package com.jdvpl.jdvpl.model;
 
 
 import lombok.AllArgsConstructor;

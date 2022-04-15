@@ -1,14 +1,15 @@
 package com.jdvpl.jdvpl.controller;
 
 
-import model.ItemCategoryModel;
+import com.jdvpl.jdvpl.model.ItemCategoryModel;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import repository.ItemCategoryRepository;
+import com.jdvpl.jdvpl.repository.ItemCategoryRepository;
+import com.jdvpl.jdvpl.repository.ItemRepository;
 
 import java.net.URI;
 import java.util.List;
@@ -20,7 +21,7 @@ public class ItemCategoryController {
     @Autowired
     private ItemCategoryRepository itemCategoryRepository;
     @Autowired
-    private ItemCategoryRepository itemRepository;
+    private ItemRepository itemRepository;
 
     @GetMapping("/categories")
     public List<ItemCategoryModel> getAllItemCategory() {

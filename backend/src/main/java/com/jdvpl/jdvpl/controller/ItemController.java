@@ -1,14 +1,14 @@
 package com.jdvpl.jdvpl.controller;
 
 
-import model.ItemModel;
+import com.jdvpl.jdvpl.model.ItemModel;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import repository.ItemRepository;
+import com.jdvpl.jdvpl.repository.ItemRepository;
 
 import java.net.URI;
 import java.util.List;
